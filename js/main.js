@@ -1,7 +1,6 @@
 // DOM Content Loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all functionality
-    initThemeToggle();
     initNavigation();
     initSmoothScrolling();
     initContactForm();
@@ -10,44 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initParticleBackground();
     initProgrammingLanguages();
 });
-
-// Theme Toggle Functionality
-function initThemeToggle() {
-    const themeToggle = document.getElementById('themeToggle');
-    const themeIcon = document.getElementById('themeIcon');
-    const body = document.body;
-    
-    // Check for saved theme preference or default to light mode
-    const currentTheme = localStorage.getItem('theme') || 'light';
-    body.setAttribute('data-theme', currentTheme);
-    
-    // Update icon based on theme
-    updateThemeIcon(currentTheme);
-    
-    themeToggle.addEventListener('click', function() {
-        const currentTheme = body.getAttribute('data-theme');
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-        
-        body.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateThemeIcon(newTheme);
-        
-        // Add a subtle animation to the toggle button
-        themeToggle.style.transform = 'scale(0.9)';
-        setTimeout(() => {
-            themeToggle.style.transform = 'scale(1)';
-        }, 150);
-    });
-}
-
-function updateThemeIcon(theme) {
-    const themeIcon = document.getElementById('themeIcon');
-    if (theme === 'light') {
-        themeIcon.className = 'fas fa-moon';
-    } else {
-        themeIcon.className = 'fas fa-sun';
-    }
-}
 
 // Navigation Functionality
 function initNavigation() {
@@ -433,11 +394,6 @@ document.addEventListener('click', function(e) {
 
 // Keyboard navigation support
 document.addEventListener('keydown', function(e) {
-    // Press 'T' to toggle theme
-    if (e.key.toLowerCase() === 't' && !e.target.matches('input, textarea')) {
-        document.getElementById('themeToggle').click();
-    }
-    
     // Press 'Escape' to close mobile menu
     if (e.key === 'Escape') {
         document.querySelector('.hamburger').classList.remove('active');
@@ -463,49 +419,29 @@ if ('IntersectionObserver' in window) {
     });
 }
 
-// Programming Languages Progress Animation
+// Programming Languages Animation (Basic Hover Effects)
 function initProgrammingLanguages() {
     const languageCards = document.querySelectorAll('.language-card');
     
     languageCards.forEach(card => {
-        const progressFill = card.querySelector('.progress-fill');
-        const level = card.getAttribute('data-level');
-        
-        if (progressFill && level) {
-            // Set CSS custom property for progress width
-            progressFill.style.setProperty('--progress-width', level + '%');
-        }
-        
-        // Add hover effects for progress bar display
+        // Enhanced hover effects
         card.addEventListener('mouseenter', function() {
             const icon = this.querySelector('.language-icon');
-            const progressBar = this.querySelector('.progress-bar');
             
-            // Show progress bar and animate icon on hover
+            // Enhanced icon animation
             if (icon) {
-                icon.style.transform = 'scale(1.15) rotateY(180deg)';
-            }
-            
-            if (progressBar) {
-                progressBar.style.opacity = '1';
-                progressBar.style.transform = 'translateY(0)';
-                progressFill.style.width = level + '%';
+                icon.style.transform = 'scale(1.15) rotateY(360deg)';
+                icon.style.filter = 'drop-shadow(0 0 15px rgba(66, 165, 245, 0.6))';
             }
         });
         
         card.addEventListener('mouseleave', function() {
             const icon = this.querySelector('.language-icon');
-            const progressBar = this.querySelector('.progress-bar');
             
-            // Reset icon and hide progress bar
+            // Reset icon animation
             if (icon) {
                 icon.style.transform = 'scale(1) rotateY(0deg)';
-            }
-            
-            if (progressBar) {
-                progressBar.style.opacity = '0';
-                progressBar.style.transform = 'translateY(10px)';
-                progressFill.style.width = '0';
+                icon.style.filter = 'none';
             }
         });
     });

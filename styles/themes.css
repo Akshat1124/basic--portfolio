@@ -2,10 +2,12 @@
 :root {
     /* Light Theme Colors */
     --primary-color: #6366f1;
+    --primary-color-rgb: 99, 102, 241;
     --accent-color: #8b5cf6;
     --bg-color: #f8fafc;
     --secondary-bg: #f1f5f9;
     --card-bg: #ffffff;
+    --card-bg-rgb: 255, 255, 255;
     --text-color: #1e293b;
     --secondary-text: #64748b;
     --border-color: #e2e8f0;
@@ -26,10 +28,12 @@
 /* Dark Theme */
 [data-theme="dark"] {
     --primary-color: #818cf8;
+    --primary-color-rgb: 129, 140, 248;
     --accent-color: #a78bfa;
     --bg-color: #0f172a;
     --secondary-bg: #1e293b;
     --card-bg: #334155;
+    --card-bg-rgb: 51, 65, 85;
     --text-color: #f1f5f9;
     --secondary-text: #94a3b8;
     --border-color: #475569;
@@ -45,17 +49,6 @@
     /* Gradients for dark theme */
     --gradient-primary: linear-gradient(135deg, #818cf8 0%, #a78bfa 100%);
     --gradient-bg: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-}
-
-/* Theme-specific navbar styling */
-[data-theme="light"] .navbar {
-    background: rgba(248, 250, 252, 0.95);
-    border-bottom: 1px solid rgba(226, 232, 240, 0.8);
-}
-
-[data-theme="dark"] .navbar {
-    background: rgba(15, 23, 42, 0.95);
-    border-bottom: 1px solid rgba(71, 85, 105, 0.8);
 }
 
 /* Theme transition for smooth switching */
