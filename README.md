@@ -165,41 +165,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 Feel free to fork this project and customize it for your own portfolio! If you make improvements, consider submitting a pull request.
 
-## 📧 Contact
-
-- **Email**: hello@akshat.dev
-- **LinkedIn**: [Your LinkedIn Profile]
-- **GitHub**: [Your GitHub Profile]
-- **Twitter**: [Your Twitter Profile]
-
----
-
-Made with ❤️ and lots of ☕ by Akshat
-
-## 🚀 Deployment
-
-### GitHub Pages
-1. Push your code to a GitHub repository
-2. Go to repository Settings > Pages
-3. Select source branch (usually `main`)
-4. Your portfolio will be live at `https://yourusername.github.io/repository-name`
-
-### Netlify
-1. Connect your GitHub repository to Netlify
-2. Deploy with default settings
-3. Your portfolio will be live with a custom domain option
-
-### Vercel
-1. Import your GitHub repository to Vercel
-2. Deploy with zero configuration
-3. Automatic deployments on every push
-
-## 🔄 Updates & Maintenance
-
-- Regularly update project showcases
-- Add new skills as you learn them
-- Update contact information as needed
-- Keep dependencies and images optimized
-- Monitor site performance and accessibility
-
-Enjoy your new portfolio! 🎉
+by Akshat Srivastava
