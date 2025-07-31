@@ -8,7 +8,41 @@ document.addEventListener('DOMContentLoaded', function() {
     initTypingAnimation();
     initParticleBackground();
     initProgrammingLanguages();
+    initThemeToggle();
 });
+
+// Theme Toggle Functionality
+function initThemeToggle() {
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const htmlElement = document.documentElement;
+
+    // Function to apply the theme
+    const applyTheme = (theme) => {
+        if (theme === 'dark') {
+            htmlElement.setAttribute('data-theme', 'dark');
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+        } else {
+            htmlElement.setAttribute('data-theme', 'light');
+            themeIcon.classList.remove('fa-sun');
+            themeIcon.classList.add('fa-moon');
+        }
+    };
+
+    // Check for saved theme in localStorage or default to light
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    applyTheme(savedTheme);
+
+    // Toggle theme on button click
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = htmlElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        applyTheme(newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
+}
 
 // Navigation Functionality
 function initNavigation() {
@@ -333,15 +367,19 @@ function initParticleBackground() {
 // Navbar background on scroll
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(248, 250, 252, 0.98)';
-        if (document.body.getAttribute('data-theme') === 'dark') {
+        if (currentTheme === 'dark') {
             navbar.style.background = 'rgba(15, 23, 42, 0.98)';
+        } else {
+            navbar.style.background = 'rgba(248, 250, 252, 0.98)';
         }
     } else {
-        navbar.style.background = 'rgba(248, 250, 252, 0.95)';
-        if (document.body.getAttribute('data-theme') === 'dark') {
+        if (currentTheme === 'dark') {
             navbar.style.background = 'rgba(15, 23, 42, 0.95)';
+        } else {
+            navbar.style.background = 'rgba(248, 250, 252, 0.95)';
         }
     }
 });
