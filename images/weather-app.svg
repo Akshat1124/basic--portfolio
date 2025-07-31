@@ -1,0 +1,64 @@
+<svg width="400" height="240" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="240" fill="#f8fafc"/>
+  
+  <!-- Cloud background -->
+  <ellipse cx="80" cy="60" rx="25" ry="15" fill="#e0e7ff" opacity="0.6"/>
+  <ellipse cx="100" cy="55" rx="20" ry="12" fill="#e0e7ff" opacity="0.6"/>
+  <ellipse cx="320" cy="70" rx="30" ry="18" fill="#e0e7ff" opacity="0.6"/>
+  <ellipse cx="340" cy="65" rx="22" ry="14" fill="#e0e7ff" opacity="0.6"/>
+  
+  <!-- Main weather widget/phone -->
+  <rect x="150" y="40" width="100" height="160" fill="#ffffff" stroke="#6366f1" stroke-width="3" rx="20"/>
+  
+  <!-- Phone screen -->
+  <rect x="160" y="60" width="80" height="120" fill="#f8fafc" rx="8"/>
+  
+  <!-- Weather icon - Sun -->
+  <circle cx="200" cy="100" r="20" fill="#fbbf24"/>
+  <path d="M 200 70 L 200 75" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 200 125 L 200 130" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 170 100 L 175 100" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 225 100 L 230 100" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 178 78 L 182 82" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 218 118 L 222 122" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 222 78 L 218 82" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 182 118 L 178 122" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Temperature -->
+  <text x="200" y="140" font-family="Arial" font-size="16" font-weight="bold" fill="#6366f1" text-anchor="middle">25°C</text>
+  
+  <!-- Location -->
+  <text x="200" y="155" font-family="Arial" font-size="10" fill="#a78bfa" text-anchor="middle">New York</text>
+  
+  <!-- Weather details -->
+  <rect x="165" y="160" width="70" height="15" fill="#e0e7ff" rx="3"/>
+  <text x="200" y="170" font-family="Arial" font-size="8" fill="#6366f1" text-anchor="middle">Sunny</text>
+  
+  <!-- API connection visualization -->
+  <circle cx="80" cy="120" r="25" fill="#a78bfa" opacity="0.3"/>
+  <text x="80" y="127" font-family="Arial" font-size="10" fill="#6366f1" text-anchor="middle">API</text>
+  
+  <circle cx="320" cy="150" r="25" fill="#6366f1" opacity="0.3"/>
+  <text x="320" y="157" font-family="Arial" font-size="10" fill="#a78bfa" text-anchor="middle">DATA</text>
+  
+  <!-- Connecting lines -->
+  <path d="M 105 120 Q 130 120 150 140" stroke="#a78bfa" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+  <path d="M 250 140 Q 280 150 295 150" stroke="#6366f1" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+  
+  <!-- Weather symbols around -->
+  <!-- Rain cloud -->
+  <ellipse cx="60" cy="180" rx="20" ry="12" fill="#6b7280"/>
+  <path d="M 50 192 L 52 197" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 58 192 L 60 197" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 66 192 L 68 197" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Wind lines -->
+  <path d="M 320 40 Q 340 35 360 40" stroke="#a78bfa" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 325 50 Q 345 45 365 50" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" fill="none"/>
+  
+  <!-- Thermometer -->
+  <rect x="340" y="180" width="8" height="40" fill="#6366f1" rx="4"/>
+  <circle cx="344" cy="225" r="8" fill="#ef4444"/>
+  <rect x="342" y="190" width="4" height="25" fill="#ef4444" rx="2"/>
+</svg>

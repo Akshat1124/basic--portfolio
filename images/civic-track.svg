@@ -1,0 +1,52 @@
+<svg width="400" height="240" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="240" fill="#f8fafc"/>
+  
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="240" fill="url(#grid)"/>
+  
+  <!-- Main building/city silhouette -->
+  <rect x="60" y="140" width="30" height="80" fill="#6366f1" rx="4"/>
+  <rect x="100" y="120" width="35" height="100" fill="#a78bfa" rx="4"/>
+  <rect x="145" y="130" width="28" height="90" fill="#6366f1" rx="4"/>
+  <rect x="185" y="110" width="40" height="110" fill="#a78bfa" rx="4"/>
+  <rect x="235" y="125" width="32" height="95" fill="#6366f1" rx="4"/>
+  <rect x="275" y="135" width="30" height="85" fill="#a78bfa" rx="4"/>
+  <rect x="315" y="115" width="35" height="105" fill="#6366f1" rx="4"/>
+  
+  <!-- Windows on buildings -->
+  <rect x="65" y="150" width="6" height="8" fill="#ffffff" rx="1"/>
+  <rect x="75" y="150" width="6" height="8" fill="#ffffff" rx="1"/>
+  <rect x="65" y="165" width="6" height="8" fill="#ffffff" rx="1"/>
+  <rect x="75" y="165" width="6" height="8" fill="#ffffff" rx="1"/>
+  
+  <rect x="108" y="135" width="6" height="8" fill="#ffffff" rx="1"/>
+  <rect x="118" y="135" width="6" height="8" fill="#ffffff" rx="1"/>
+  <rect x="108" y="150" width="6" height="8" fill="#ffffff" rx="1"/>
+  <rect x="118" y="150" width="6" height="8" fill="#ffffff" rx="1"/>
+  
+  <!-- Complaint/tracking icon (clipboard with checkmarks) -->
+  <rect x="170" y="40" width="60" height="80" fill="#ffffff" stroke="#6366f1" stroke-width="3" rx="8"/>
+  <rect x="175" y="35" width="50" height="10" fill="#6366f1" rx="5"/>
+  
+  <!-- Checkmarks inside clipboard -->
+  <path d="M 185 60 L 190 65 L 200 55" stroke="#a78bfa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M 185 75 L 190 80 L 200 70" stroke="#a78bfa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M 185 90 L 190 95 L 200 85" stroke="#a78bfa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Lines representing text -->
+  <line x1="205" y1="62" x2="215" y2="62" stroke="#d1d5db" stroke-width="2" stroke-linecap="round"/>
+  <line x1="205" y1="77" x2="220" y2="77" stroke="#d1d5db" stroke-width="2" stroke-linecap="round"/>
+  <line x1="205" y1="92" x2="215" y2="92" stroke="#d1d5db" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="320" cy="60" r="8" fill="#a78bfa" opacity="0.6"/>
+  <circle cx="340" cy="50" r="6" fill="#6366f1" opacity="0.6"/>
+  <circle cx="80" cy="50" r="10" fill="#a78bfa" opacity="0.4"/>
+  <circle cx="60" cy="70" r="7" fill="#6366f1" opacity="0.4"/>
+</svg>

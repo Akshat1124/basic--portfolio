@@ -1,0 +1,56 @@
+<svg width="400" height="240" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="240" fill="#f8fafc"/>
+  
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="15" height="15" patternUnits="userSpaceOnUse">
+      <path d="M 15 0 L 0 0 0 15" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="240" fill="url(#grid)"/>
+  
+  <!-- Shopping cart -->
+  <rect x="60" y="120" width="80" height="60" fill="#ffffff" stroke="#6366f1" stroke-width="3" rx="8"/>
+  <circle cx="75" cy="195" r="8" fill="#6366f1"/>
+  <circle cx="125" cy="195" r="8" fill="#6366f1"/>
+  <path d="M 50 100 L 65 100 L 75 140 L 135 140" stroke="#6366f1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Shopping items in cart -->
+  <rect x="70" y="130" width="15" height="20" fill="#a78bfa" rx="2"/>
+  <rect x="90" y="125" width="15" height="25" fill="#6366f1" rx="2"/>
+  <rect x="110" y="135" width="15" height="15" fill="#a78bfa" rx="2"/>
+  
+  <!-- Store/shop icon -->
+  <rect x="200" y="80" width="120" height="100" fill="#ffffff" stroke="#6366f1" stroke-width="3" rx="8"/>
+  <polygon points="200,80 260,40 320,80" fill="#a78bfa"/>
+  <rect x="230" y="120" width="25" height="40" fill="#6366f1" rx="4"/>
+  <rect x="265" y="120" width="25" height="40" fill="#6366f1" rx="4"/>
+  <circle cx="240" cy="135" r="3" fill="#ffffff"/>
+  <circle cx="275" cy="135" r="3" fill="#ffffff"/>
+  
+  <!-- Door -->
+  <rect x="242" y="140" width="16" height="40" fill="#ffffff" stroke="#6366f1" stroke-width="2" rx="8"/>
+  <circle cx="252" cy="160" r="2" fill="#6366f1"/>
+  
+  <!-- Credit card -->
+  <rect x="280" y="50" width="60" height="38" fill="#6366f1" rx="6"/>
+  <rect x="285" y="55" width="50" height="8" fill="#ffffff" rx="2"/>
+  <rect x="285" y="68" width="12" height="8" fill="#a78bfa" rx="1"/>
+  <line x1="305" y1="72" x2="330" y2="72" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="305" y1="78" x2="325" y2="78" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Decorative shopping elements -->
+  <circle cx="80" cy="60" r="12" fill="#a78bfa" opacity="0.6"/>
+  <path d="M 75 55 L 80 60 L 85 55" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <circle cx="340" cy="120" r="10" fill="#6366f1" opacity="0.4"/>
+  <path d="M 336 116 L 340 120 L 344 116" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Price tags -->
+  <circle cx="160" cy="70" r="15" fill="#a78bfa"/>
+  <text x="160" y="75" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">$</text>
+  
+  <circle cx="180" cy="140" r="12" fill="#6366f1"/>
+  <text x="180" y="145" font-family="Arial" font-size="10" fill="#ffffff" text-anchor="middle">%</text>
+</svg>
