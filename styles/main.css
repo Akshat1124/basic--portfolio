@@ -17,6 +17,40 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Focus styles for accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px dashed var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Responsive improvements for mobile */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  section {
+    padding: 2rem 0;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* System dark mode fallback */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #0f172a;
+    --text-color: #f8fafc;
+    --primary-color: #818cf8;
+    --accent-color: #a78bfa;
+    --secondary-bg: #1e293b;
+    --card-bg: #334155;
+    --border-color: #475569;
+  }
+}
+
 /* Container */
 .container {
     max-width: 1200px;

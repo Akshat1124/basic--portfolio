@@ -1,0 +1,68 @@
+/* Focus styles for accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px dashed var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Responsive improvements for mobile */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  section {
+    padding: 2rem 0;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* Explicit dark mode (JS toggle) */
+[data-theme="dark"] {
+  --bg-color: #0f172a;
+  --text-color: #f8fafc;
+  --primary-color: #818cf8;
+  --accent-color: #a78bfa;
+  --secondary-bg: #1e293b;
+  --card-bg: #334155;
+  --border-color: #475569;
+}
+
+/* Explicit light mode (JS toggle) */
+[data-theme="light"] {
+  --bg-color: #f8fafc;
+  --text-color: #1e293b;
+  --primary-color: #6366f1;
+  --accent-color: #8b5cf6;
+  --secondary-bg: #f1f5f9;
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0;
+}
+
+/* System dark mode fallback */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --bg-color: #0f172a;
+    --text-color: #f8fafc;
+    --primary-color: #818cf8;
+    --accent-color: #a78bfa;
+    --secondary-bg: #1e293b;
+    --card-bg: #334155;
+    --border-color: #475569;
+  }
+}
+
+/* System light mode fallback */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+    --primary-color: #6366f1;
+    --accent-color: #8b5cf6;
+    --secondary-bg: #f1f5f9;
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+  }
+}
